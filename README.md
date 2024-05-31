@@ -1,9 +1,7 @@
-Sure, here's a basic README.md template for your repository:
-
-```markdown
 # Apparel API
 
-This repository contains a REST API for managing apparel inventory and orders for a vendor. The API is implemented using Node.js in TypeScript.
+This repository contains a REST API for managing apparel inventory and orders for a vendor.
+The API is implemented using Node.js in TypeScript.
 
 ## Business Knowledge
 
@@ -49,11 +47,10 @@ This repository contains a REST API for managing apparel inventory and orders fo
 
 ## API Endpoints
 
-- **GET /apparel/:code/availability**: Check availability of a specific apparel item by its code.
-- **GET /apparel/:code/price**: Get the price of a specific apparel item by its code.
-- **POST /apparel/update**: Update stock quality and price for one or multiple apparel items.
-- **POST /orders/check**: Check if an order can be fulfilled based on current stock availability.
-- **POST /orders/lowest-cost**: Get the lowest cost at which an order can be fulfilled.
+- **POST /vendor/update - Update stock and price for one apparel code and size.
+- **POST /vendor/update-multiple - Update stock and price for multiple apparel codes and sizes.
+- **GET /order/check - Check if an order can be fulfilled.
+- **GET /order/lowest-cost - Get the lowest cost for fulfilling an order.
 
 ## Unit Tests
 
@@ -62,6 +59,23 @@ To run unit tests, use the following command:
 ```bash
 npm test
 ```
+
+## Here are Results from Postman:
+
+### vendor/update
+![image](https://github.com/varun21vaidya/apparel-api-nodejs/assets/65745841/60b6312c-38d8-4b0f-86cd-ccfdc4271a10)
+
+## vendor/update-multiple
+![image](https://github.com/varun21vaidya/apparel-api-nodejs/assets/65745841/cb2aa1c0-e98c-449a-9cba-29b2410721ef)
+
+## Result
+![image](https://github.com/varun21vaidya/apparel-api-nodejs/assets/65745841/0464b883-906e-4e54-9479-fe01c99e4423)
+
+## order/check
+![image](https://github.com/varun21vaidya/apparel-api-nodejs/assets/65745841/00b69f98-494e-42c7-be39-807ab2e26752)
+
+## order/lowest-cost
+![image](https://github.com/varun21vaidya/apparel-api-nodejs/assets/65745841/c1462386-fd08-4ba9-b349-00e55f34f41b)
 
 ## Contributing
 
