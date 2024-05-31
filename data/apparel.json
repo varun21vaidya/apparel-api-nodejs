@@ -1,0 +1,14 @@
+[
+  {
+    "code": "A1",
+    "size": "M",
+    "quantity": 10,
+    "price": 50
+  },
+  {
+    "code": "A2",
+    "size": "L",
+    "quantity": 5,
+    "price": 30
+  }
+]
